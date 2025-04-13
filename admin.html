@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理员面板 - 心灵港湾</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .admin-panel {
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 30px;
+            margin-top: 100px;
+        }
+        
+        .admin-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .admin-header h1 {
+            color: var(--primary-color);
+        }
+        
+        .admin-login-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .admin-content {
+            display: none;
+        }
+        
+        .admin-content.active {
+            display: block;
+        }
+        
+        .admin-menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .admin-menu-item {
+            padding: 10px 20px;
+            background-color: #f8f9fc;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .admin-menu-item:hover,
+        .admin-menu-item.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .content-editor {
+            margin-bottom: 20px;
+        }
+        
+        .content-editor textarea {
+            width: 100%;
+            height: 300px;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: var(--border-radius);
+            font-family: inherit;
+            outline: none;
+            margin-bottom: 15px;
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <!-- 背景覆盖层 -->
+    <div class="bg-overlay"></div>
+    
+    <div class="container">
+        <div class="admin-panel">
+            <div class="admin-header">
+                <h1>管理员面板</h1>
+                <p>请登录以管理社群内容</p>
+            </div>
+            
+            <div class="admin-login-form" id="admin-login-form">
+                <div class="form-group">
+                    <label for="admin-username">用户名</label>
+                    <input type="text" id="admin-username" placeholder="请输入管理员用户名">
+                </div>
+                <div class="form-group">
+                    <label for="admin-pass">密码</label>
+                    <input type="password" id="admin-pass" placeholder="请输入管理员密码">
+                </div>
+                <button class="btn" id="admin-login-btn">登录</button>
+                <p style="text-align: center; margin-top: 20px;">
+                    <a href="index.html">返回首页</a>
+                </p>
+            </div>
+            
+            <div class="admin-content" id="admin-content">
+                <div class="admin-menu">
+                    <div class="admin-menu-item active" data-target="daily-editor">每日分享</div>
+                    <div class="admin-menu-item" data-target="messages-manager">留言管理</div>
+                    <div class="admin-menu-item" data-target="gallery-manager">相册管理</div>
+                </div>
+                
+                <div class="admin-section active" id="daily-editor">
+                    <h2>编辑每日分享内容</h2>
+                    <div class="content-editor">
+                        <label for="content-title">标题</label>
+                        <input type="text" id="content-title" placeholder="输入标题" value="构建高效自我管理系统">
+                        
+                        <label for="content-body">内容</label>
+                        <textarea id="content-body">在快节奏的现代生活中，高效的自我管理系统是成功的关键。今天，我们将探讨如何建立一个个人化的系统，帮助您更好地管理时间、任务和目标。
+
+要点一：时间块工作法
+将一天划分为专注的时间块，每个时间块专注于一项任<think>我需要创建一个更完善、美观的网站代码，包含以下要素：
+1. 背景图
+2. 留言框
+3. 相框（展示图片）
+4. 每日分享内容区域（需要管理员密码保护）
+5. 整体美观的设计
+
+我将创建以下文件：
+- index.html（主页）
+- styles.css（样式表）
+- script.js（JavaScript功能）
+- admin.html（管理员页面）
+- about.html（关于页面）
+
+我需要确保代码简洁明了，同时又包含所有要求的功能。由于这是静态网站，某些动态功能（如留言框存储、管理员验证）会有限制，但我会提供符合GitHub Pages静态托管的最佳解决方案。</think>
+
+# 优化的私域社群网站代码
+
+我将为您创建一个美观、功能齐全的网站代码，包含您要求的所有功能。由于GitHub Pages是静态网站托管，某些动态功能会通过前端实现，实际应用中可能需要进一步集成第三方服务。
+
+## 文件结构
+
